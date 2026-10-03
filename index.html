@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#070a18" />
+    <meta
+      name="description"
+      content="CareerX – Campus to Corporate. An AI-powered career readiness platform: personalized career roadmaps, skill gap analysis, course & certification recommendations, internship matching, AI resume builder and mock interviews. Bilingual (English / हिंदी)."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='.55' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23070a18'/%3E%3Cpath d='M20 44 L32 20 L44 44' stroke='url(%23g)' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M25 37h14' stroke='url(%23g)' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>CareerX — From Campus to Career | AI Career Operating System</title>
+    <style>
+      /* Pre-hydration splash: avoids a white flash and shows the brand instantly. */
+      html { background: #070a18; }
+      html.light { background: #f6f8fc; }
+      #boot {
+        position: fixed; inset: 0; display: grid; place-items: center;
+        background: #070a18; z-index: 9999; transition: opacity .4s ease;
+        font-family: Sora, Inter, system-ui, sans-serif;
+      }
+      html.light #boot { background: #f6f8fc; }
+      #boot .bx { width: 54px; height: 54px; border-radius: 16px; border: 2px solid rgba(139,92,246,.35);
+        border-top-color: #8b5cf6; animation: bspin 1s linear infinite; }
+      #boot p { margin-top: 18px; color: #94a3b8; font-size: 13px; letter-spacing: .18em; text-transform: uppercase; }
+      html.light #boot p { color: #64748b; }
+      @keyframes bspin { to { transform: rotate(360deg); } }
+    </style>
+  </head>
+  <body>
+    <div id="boot"><div style="text-align:center"><div class="bx" style="margin:0 auto"></div><p>CareerX</p></div></div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

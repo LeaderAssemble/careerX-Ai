@@ -1,0 +1,67 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: 'class',
+  content: ['./index.html', './src/**/*.{js,jsx}'],
+  theme: {
+    extend: {
+      colors: {
+        // Theme-aware tokens (values come from CSS variables in index.css)
+        bg: 'rgb(var(--c-bg) / <alpha-value>)',
+        surface: 'rgb(var(--c-surface) / <alpha-value>)',
+        surface2: 'rgb(var(--c-surface-2) / <alpha-value>)',
+        line: 'rgb(var(--c-line) / <alpha-value>)',
+        ink: 'rgb(var(--c-ink) / <alpha-value>)',
+        muted: 'rgb(var(--c-muted) / <alpha-value>)',
+        brand: {
+          DEFAULT: 'rgb(var(--c-brand) / <alpha-value>)',
+          soft: 'rgb(var(--c-brand-soft) / <alpha-value>)',
+          2: 'rgb(var(--c-brand-2) / <alpha-value>)',
+        },
+        accent: 'rgb(var(--c-accent) / <alpha-value>)',
+        ok: 'rgb(var(--c-ok) / <alpha-value>)',
+        warn: 'rgb(var(--c-warn) / <alpha-value>)',
+        bad: 'rgb(var(--c-bad) / <alpha-value>)',
+      },
+      fontFamily: {
+        display: ['Sora', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
+      },
+      boxShadow: {
+        glow: '0 0 0 1px rgb(var(--c-brand) / 0.25), 0 8px 40px -12px rgb(var(--c-brand) / 0.45)',
+        soft: '0 1px 2px rgb(15 23 42 / 0.04), 0 12px 32px -16px rgb(15 23 42 / 0.18)',
+        lift: '0 24px 60px -24px rgb(15 23 42 / 0.35)',
+      },
+      borderRadius: { xl2: '1.25rem', '4xl': '2rem' },
+      transitionTimingFunction: { spring: 'cubic-bezier(0.22, 1, 0.36, 1)' },
+      keyframes: {
+        'fade-up': { '0%': { opacity: 0, transform: 'translateY(14px)' }, '100%': { opacity: 1, transform: 'none' } },
+        'fade-in': { '0%': { opacity: 0 }, '100%': { opacity: 1 } },
+        'scale-in': { '0%': { opacity: 0, transform: 'scale(.96)' }, '100%': { opacity: 1, transform: 'none' } },
+        'slide-in-right': { '0%': { opacity: 0, transform: 'translateX(24px)' }, '100%': { opacity: 1, transform: 'none' } },
+        'slide-up-sheet': { '0%': { transform: 'translateY(100%)' }, '100%': { transform: 'none' } },
+        float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-12px)' } },
+        'gradient-pan': { '0%,100%': { 'background-position': '0% 50%' }, '50%': { 'background-position': '100% 50%' } },
+        'pulse-ring': { '0%': { transform: 'scale(.85)', opacity: .7 }, '70%': { transform: 'scale(1.4)', opacity: 0 }, '100%': { opacity: 0 } },
+        shimmer: { '100%': { transform: 'translateX(100%)' } },
+        'spin-slow': { to: { transform: 'rotate(360deg)' } },
+        blink: { '0%,100%': { opacity: 1 }, '50%': { opacity: .25 } },
+        'bar-grow': { '0%': { transform: 'scaleX(0)' }, '100%': { transform: 'scaleX(1)' } },
+      },
+      animation: {
+        'fade-up': 'fade-up .55s cubic-bezier(.22,1,.36,1) both',
+        'fade-in': 'fade-in .4s ease both',
+        'scale-in': 'scale-in .28s cubic-bezier(.22,1,.36,1) both',
+        'slide-in-right': 'slide-in-right .35s cubic-bezier(.22,1,.36,1) both',
+        'slide-up-sheet': 'slide-up-sheet .32s cubic-bezier(.22,1,.36,1) both',
+        float: 'float 7s ease-in-out infinite',
+        'gradient-pan': 'gradient-pan 12s ease infinite',
+        'pulse-ring': 'pulse-ring 2.6s cubic-bezier(.22,1,.36,1) infinite',
+        'spin-slow': 'spin-slow 22s linear infinite',
+        blink: 'blink 1.2s ease-in-out infinite',
+        'bar-grow': 'bar-grow .8s cubic-bezier(.22,1,.36,1) both',
+      },
+    },
+  },
+  plugins: [],
+};
