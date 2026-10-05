@@ -68,6 +68,7 @@ careerX-AI/
 ├── package-lock.json        # Locked dependency versions
 ├── LICENSE                  # Apache 2.0 license
 ├── PRIVACY_POLICY.md        # Privacy and copyright policy
+├── LEGAL.md                 # Legal notice and copyright policy
 └── .env                     # Local environment file (not committed)
 ```
 
@@ -157,12 +158,18 @@ https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
+## Ownership & Legal Notice
+
+This project is the intellectual property of LeaderAssemble. All rights to the original project, source code, interface, content, and related materials remain reserved by the owner unless otherwise explicitly stated in writing.
+
+Use of this project must comply with the repository `LICENSE`, `PRIVACY_POLICY.md`, and `LEGAL.md` documents. Unauthorized copying, misrepresentation, or redistribution in violation of the license terms is prohibited.
+
 ## Privacy & Copyright
 
-- This project is the intellectual property of LeaderAssemble.
-- All rights to the original code, design, branding, and content remain reserved to the project owner.
-- Unauthorized copying, redistribution, claiming ownership, or commercial reuse without proper authorization is prohibited.
-- Users must respect the terms of the `LICENSE` file and the `PRIVACY_POLICY.md` document.
+- This project is protected by copyright and intellectual property law.
+- All original work remains owned by LeaderAssemble.
+- The project may be used under the terms of the Apache License 2.0 and the repository legal notices.
+- Users must retain attribution and legal notices when sharing or modifying the project.
 
 ## Contributing
 
