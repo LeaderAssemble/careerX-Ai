@@ -1,6 +1,6 @@
 # CareerX-AI
 
-CareerX-AI is an AI-powered career readiness platform built to help students transition from campus to corporate life. The project combines personalized career guidance, learning roadmaps, skill-gap analysis, interview preparation, and job discovery into a single experience.
+CareerX-AI is an AI-powered career readiness platform built to help students transition from campus to corporate life. The project combines personalized career guidance, learning roadmaps, skill-gap analysis, and job-readiness support for future professionals.
 
 ## Overview
 
@@ -42,31 +42,33 @@ The application is built with React on the frontend, a Node.js API layer, and My
 careerX-AI/
 ├── src/                     # React application source files
 │   ├── components/          # Reusable UI and feature components
-│   ├── pages/              # Landing, auth, student, and admin views
-│   ├── store/              # App state and context management
-│   ├── services/           # API/service integrations
-│   ├── config/             # Configuration data
-│   ├── i18n/               # Internationalization resources
-│   ├── App.jsx             # Route configuration and app shell
-│   ├── main.jsx            # App entry point
-│   └── index.css           # Styling and theme definitions
-├── server/                 # Node.js backend API
-│   ├── index.js            # Main server and API routes
-│   ├── mysqlStore.js       # MySQL database logic
-│   ├── jobFeedService.js   # Job feed ingestion logic
+│   ├── pages/               # Landing, auth, student, and admin views
+│   ├── store/               # App state and context management
+│   ├── services/            # API/service integrations
+│   ├── config/              # Configuration data
+│   ├── i18n/                # Internationalization resources
+│   ├── App.jsx              # Route configuration and app shell
+│   ├── main.jsx             # App entry point
+│   └── index.css            # Styling and theme definitions
+├── server/                  # Node.js backend API
+│   ├── index.js             # Main server and API routes
+│   ├── mysqlStore.js        # MySQL database logic
+│   ├── jobFeedService.js    # Job feed ingestion logic
 │   └── ...
-├── scripts/                # Automation and QA scripts
-├── .env.example            # Environment variable template
-├── DATABASE.md             # Database setup guide
-├── index.html              # Vite HTML entry
-├── package.json            # Project scripts and dependencies
-├── vite.config.js          # Vite configuration
-├── tailwind.config.js      # Tailwind configuration
-├── postcss.config.js       # PostCSS configuration
-├── .gitignore              # Git ignore rules
-├── README.md               # Project documentation
-├── package-lock.json       # Locked dependency versions
-└── LICENSE                 # If added in the repo
+├── scripts/                 # Automation and QA scripts
+├── .env.example             # Environment variable template
+├── DATABASE.md              # Database setup guide
+├── index.html               # Vite HTML entry
+├── package.json             # Project scripts and dependencies
+├── vite.config.js           # Vite configuration
+├── tailwind.config.js       # Tailwind configuration
+├── postcss.config.js        # PostCSS configuration
+├── .gitignore               # Git ignore rules
+├── README.md                # Project documentation
+├── package-lock.json        # Locked dependency versions
+├── LICENSE                  # Apache 2.0 license
+├── PRIVACY_POLICY.md        # Privacy and copyright policy
+└── .env                     # Local environment file (not committed)
 ```
 
 ## Getting Started
@@ -145,7 +147,22 @@ npm run qa         # Run full quality checks
 
 ## License
 
-This project does not currently declare a license in the repository snapshot provided. If you plan to distribute or reuse it publicly, add a license file and update this section accordingly.
+This project is licensed under the Apache License 2.0.
+
+Copyright 2026 LeaderAssemble
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at:
+
+https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+## Privacy & Copyright
+
+- This project is the intellectual property of LeaderAssemble.
+- All rights to the original code, design, branding, and content remain reserved to the project owner.
+- Unauthorized copying, redistribution, claiming ownership, or commercial reuse without proper authorization is prohibited.
+- Users must respect the terms of the `LICENSE` file and the `PRIVACY_POLICY.md` document.
 
 ## Contributing
 
@@ -158,4 +175,4 @@ Contributions are welcome. To contribute:
 
 ## Contact
 
-For project questions or collaboration opportunities, contact the repository owner or maintainers on GitHub.
+For project questions, collaboration opportunities, or legal/privacy concerns, contact the repository owner or maintainers on GitHub.
